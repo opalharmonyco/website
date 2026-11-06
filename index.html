@@ -57,6 +57,24 @@
             font-size: 0.95rem;
         }
 
+        h2 {
+            font-size: 1.1rem;
+            margin: 2rem 0 0.75rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 0.4rem 0.5rem 0.4rem 0;
+            border-bottom: 1px solid var(--rule);
+            vertical-align: top;
+        }
+
         footer {
             margin-top: 3rem;
             padding-top: 1.5rem;
@@ -68,6 +86,7 @@
         @media (max-width: 500px) {
             body { padding: 1.25rem 1rem; }
             h1 { font-size: 1.3rem; }
+            table { font-size: 0.8rem; }
         }
     </style>
 </head>
@@ -92,9 +111,40 @@
         <span class="value">Ολύμπου 9, 54630, Θεσσαλονίκη</span>
     </div>
     <div class="field">
+        <span class="label">Εταιρικό κεφάλαιο:</span>
+        <span class="value">2.000,00 € (2.000 εταιρικά μερίδια κεφαλαιακών εισφορών)</span>
+    </div>
+    <div class="field">
+        <span class="label">Εγγυητικές εισφορές (άρθρο 79):</span>
+        <span class="value">0,00 €</span>
+    </div>
+    <div class="field">
+        <span class="label">Εκκαθάριση:</span>
+        <span class="value">Η εταιρεία δεν τελεί υπό εκκαθάριση</span>
+    </div>
+    <div class="field">
+        <span class="label">Διαχειριστής:</span>
+        <span class="value">Ορέστης Παλαμπουγιούκης</span>
+    </div>
+    <div class="field">
+        <span class="label">Ιστοσελίδα:</span>
+        <span class="value">https://opalharmony.gr/</span>
+    </div>
+    <div class="field">
         <span class="label">Επικοινωνία:</span>
         <span class="value"><a href="mailto:hello@opalharmony.gr">hello@opalharmony.gr</a></span>
     </div>
+
+    <h2>Εταίροι</h2>
+    <table>
+        <thead>
+            <tr><th>Ονοματεπώνυμο</th><th>Διεύθυνση</th><th>Κατηγορία εισφορών</th><th>Μερίδια</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Ορέστης Παλαμπουγιούκης</td><td>c/o Ολύμπου 9, 54630, Θεσσαλονίκη</td><td>Κεφαλαιακές</td><td>1.900 (95%)</td></tr>
+            <tr><td>Ηρώ Παλαμπουγιούκη</td><td>c/o Ολύμπου 9, 54630, Θεσσαλονίκη</td><td>Κεφαλαιακές</td><td>100 (5%)</td></tr>
+        </tbody>
+    </table>
 </main>
 
 <footer>
