@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
-    <meta name="description" content="Opal Harmony P.C. (OPAL HARMONY Ι.Κ.Ε.) — software company in Thessaloniki, Greece. Software application development — our own products and development services for clients.">
+    <meta name="description" content="Opal Harmony P.C. (OPAL HARMONY Ι.Κ.Ε.) — software company in Thessaloniki, Greece. Software application development: our own products and development services for clients.">
     <title>Opal Harmony P.C. — Software company, Thessaloniki</title>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNSIgZmlsbD0iIzJjNWY0YSIvPjx0ZXh0IHg9IjE2IiB5PSIyMiIgZm9udC1mYW1pbHk9Ikdlb3JnaWEsc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjZmFmYWY4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5PSDwvdGV4dD48L3N2Zz4=">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3CradialGradient id='g' cx='38%25' cy='32%25' r='70%25'%3E%3Cstop offset='0' stop-color='%23fdfcf7'/%3E%3Cstop offset='.35' stop-color='%23d9efe6'/%3E%3Cstop offset='.65' stop-color='%23b9d7e8'/%3E%3Cstop offset='.85' stop-color='%23e6c9d4'/%3E%3Cstop offset='1' stop-color='%238fb8a8'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%232c5f4a'/%3E%3Cellipse cx='32' cy='33' rx='19' ry='15' fill='url(%23g)'/%3E%3Cellipse cx='25' cy='26' rx='6' ry='3.5' fill='%23fff' opacity='.7'/%3E%3C/svg%3E">
     <style>
         :root {
             --ink: #1a1a1a;
@@ -17,7 +17,7 @@
             --rule: #d9d6cd;
             --accent: #2c5f4a;
             --accent-ink: #244c3c;
-            --measure: 64ch;
+            --measure: 66ch;
         }
         @media (prefers-color-scheme: dark) {
             :root {
@@ -32,51 +32,51 @@
             }
         }
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { -webkit-text-size-adjust: 100%; }
+        html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scroll-padding-top: 5rem; }
         body {
             font-family: Georgia, 'Times New Roman', 'Noto Serif', serif;
             background: var(--paper);
             color: var(--ink);
             font-size: 1.0625rem;
             line-height: 1.6;
-            padding: 3.5rem 1.5rem 4rem;
-            max-width: calc(var(--measure) + 3rem);
-            margin: 0 auto;
         }
         a { color: var(--accent-ink); text-decoration: underline; text-underline-offset: 0.15em; text-decoration-thickness: 1px; }
         a:hover { color: var(--accent); }
         a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+        .wrap { max-width: calc(var(--measure) + 3rem); margin: 0 auto; padding: 0 1.5rem; }
 
-        /* identity */
-        .mark {
-            display: inline-flex; align-items: center; justify-content: center;
-            width: 2.75rem; height: 2.75rem; border-radius: 0.5rem;
-            background: var(--accent); color: #faf9f6;
-            font-weight: 700; font-size: 1.05rem; letter-spacing: 0.02em;
-            margin-bottom: 1.25rem;
-        }
-        header { margin-bottom: 3rem; }
-        h1 { font-size: 2.2rem; line-height: 1.15; font-weight: 700; letter-spacing: -0.01em; }
-        .subtitle { margin-top: 0.4rem; font-size: 1rem; color: var(--muted); }
+        /* header + nav */
+        .site-header { border-bottom: 1px solid var(--rule); }
+        .site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; height: 4.25rem; }
+        .brand { display: inline-flex; align-items: center; gap: 0.7rem; text-decoration: none; color: var(--ink); font-weight: 700; font-size: 1.05rem; letter-spacing: 0.01em; }
+        .brand svg { width: 2.1rem; height: 2.1rem; flex: none; }
+        nav ul { list-style: none; display: flex; gap: 1.4rem; }
+        nav a { text-decoration: none; color: var(--ink-2); font-size: 0.95rem; }
+        nav a:hover { color: var(--accent); text-decoration: underline; }
+
+        /* hero */
+        .hero { padding: 4rem 0 3.5rem; }
+        .hero svg { width: 4.5rem; height: 4.5rem; margin-bottom: 1.5rem; display: block; }
+        h1 { font-size: 2.4rem; line-height: 1.12; font-weight: 700; letter-spacing: -0.01em; }
+        .subtitle { margin-top: 0.5rem; font-size: 1.05rem; color: var(--muted); }
+        .lead { font-size: 1.35rem; line-height: 1.4; margin-top: 1.75rem; max-width: 30em; }
 
         /* sections */
-        section { margin-bottom: 3rem; }
+        main > section { padding: 2.75rem 0; border-top: 1px solid var(--rule); }
         h2 {
             font-size: 0.8rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
-            color: var(--muted); margin-bottom: 0.9rem;
+            color: var(--muted); margin-bottom: 1rem;
         }
-        .lead { font-size: 1.35rem; line-height: 1.4; margin-bottom: 1.25rem; }
         p + p { margin-top: 0.9rem; }
         dl { display: grid; grid-template-columns: max-content 1fr; column-gap: 1.5rem; row-gap: 0.45rem; }
         dt { font-weight: 700; color: var(--ink-2); }
-        dd { color: var(--ink); }
         .services { list-style: none; display: grid; gap: 0.6rem; }
         .services li { padding-left: 1.1rem; position: relative; }
         .services li::before { content: ""; position: absolute; left: 0; top: 0.72em; width: 0.4rem; height: 0.4rem; border-radius: 50%; background: var(--accent); }
 
         /* legal block — tertiary */
         .legal {
-            margin-top: 4rem; padding: 1.75rem 1.5rem 1.5rem;
+            margin: 1.5rem 0 3rem; padding: 1.75rem 1.5rem 1.5rem;
             background: var(--paper-2); border-radius: 0.5rem;
             font-size: 0.92rem; line-height: 1.55; color: var(--ink-2);
         }
@@ -91,12 +91,18 @@
         th { font-weight: 700; color: var(--ink-2); }
         tr:last-child td { border-bottom: 0; }
 
-        footer { margin-top: 3rem; font-size: 0.82rem; color: var(--muted); }
+        footer { border-top: 1px solid var(--rule); padding: 1.5rem 0 2.5rem; font-size: 0.82rem; color: var(--muted); }
+        footer .wrap { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; justify-content: space-between; }
 
-        @media (max-width: 560px) {
-            body { padding: 2.25rem 1rem 3rem; font-size: 1rem; }
-            h1 { font-size: 1.75rem; }
+        @media (max-width: 600px) {
+            body { font-size: 1rem; }
+            .wrap { padding: 0 1rem; }
+            .site-header .wrap { height: auto; padding: 0.9rem 1rem; flex-wrap: wrap; gap: 0.6rem; }
+            nav ul { gap: 1rem; flex-wrap: wrap; }
+            .hero { padding: 2.5rem 0 2.25rem; }
+            h1 { font-size: 1.85rem; }
             .lead { font-size: 1.2rem; }
+            main > section { padding: 2rem 0; }
             dl { grid-template-columns: 1fr; row-gap: 0.15rem; }
             dt { margin-top: 0.6rem; }
             table { font-size: 0.78rem; }
@@ -106,73 +112,121 @@
 </head>
 <body>
 
-<header>
-    <div class="mark" aria-hidden="true">OH</div>
-    <h1>Opal Harmony P.C.</h1>
-    <div class="subtitle">Software company · Thessaloniki, Greece · since 2024</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+        <radialGradient id="opal" cx="38%" cy="32%" r="70%">
+            <stop offset="0" stop-color="#fdfcf7"/>
+            <stop offset="0.35" stop-color="#d9efe6"/>
+            <stop offset="0.65" stop-color="#b9d7e8"/>
+            <stop offset="0.85" stop-color="#e6c9d4"/>
+            <stop offset="1" stop-color="#8fb8a8"/>
+        </radialGradient>
+        <symbol id="mark" viewBox="0 0 64 64">
+            <rect width="64" height="64" rx="14" fill="#2c5f4a"/>
+            <ellipse cx="32" cy="33" rx="19" ry="15" fill="url(#opal)"/>
+            <ellipse cx="25" cy="26" rx="6" ry="3.5" fill="#fff" opacity="0.7"/>
+        </symbol>
+    </defs>
+</svg>
+
+<header class="site-header">
+    <div class="wrap">
+        <a class="brand" href="#top" aria-label="Opal Harmony home">
+            <svg aria-hidden="true"><use href="#mark"/></svg>
+            <span>Opal Harmony</span>
+        </a>
+        <nav aria-label="Sections">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
-<main>
-    <section>
-        <h2>What we do</h2>
-        <p class="lead">Opal Harmony designs and develops software: our own applications, and application development for clients.</p>
-        <p>The company is privately held, founded in April 2024 and registered in the Greek General Commercial Registry (G.E.MI.) under no. 176908106000.</p>
+<main id="top">
+    <div class="hero wrap">
+        <svg aria-hidden="true"><use href="#mark"/></svg>
+        <h1>Opal Harmony P.C.</h1>
+        <div class="subtitle">Software company · Thessaloniki, Greece · since 2024</div>
+        <p class="lead">We design and develop software: our own applications, and application development for clients.</p>
+    </div>
+
+    <section id="about">
+        <div class="wrap">
+            <h2>About</h2>
+            <p>Opal Harmony is a privately held software company based in Thessaloniki, Greece. It was founded in April 2024 and is registered in the Greek General Commercial Registry (G.E.MI.) under no. 176908106000.</p>
+            <p>We work on two things: software products of our own, and application development for clients who need a small, careful engineering team.</p>
+        </div>
     </section>
 
-    <section>
-        <h2>Services</h2>
-        <ul class="services">
-            <li>Software application design and development</li>
-            <li>Web and mobile applications, backend systems and integrations</li>
-        </ul>
+    <section id="services">
+        <div class="wrap">
+            <h2>Services</h2>
+            <ul class="services">
+                <li>Software application design and development</li>
+                <li>Web and mobile applications, backend systems and integrations</li>
+            </ul>
+        </div>
     </section>
 
-    <section>
-        <h2>Products</h2>
-        <p>Our own software applications for consumers and small businesses.</p>
+    <section id="products">
+        <div class="wrap">
+            <h2>Products</h2>
+            <p>Our own software applications for consumers and small businesses.</p>
+        </div>
     </section>
 
-    <section>
-        <h2>Contact</h2>
-        <dl>
-            <dt>Email</dt><dd><a href="mailto:hello@opalharmony.gr">hello@opalharmony.gr</a></dd>
-            <dt>Phone</dt><dd><a href="tel:+302313252248">+30 231 325 2248</a></dd>
-            <dt>Address</dt><dd>Olympou 9, 546 30 Thessaloniki, Greece</dd>
-        </dl>
+    <section id="contact">
+        <div class="wrap">
+            <h2>Contact</h2>
+            <dl>
+                <dt>Email</dt><dd><a href="mailto:hello@opalharmony.gr">hello@opalharmony.gr</a></dd>
+                <dt>Phone</dt><dd><a href="tel:+302313252248">+30 231 325 2248</a></dd>
+                <dt>Address</dt><dd>Olympou 9, 546 30 Thessaloniki, Greece</dd>
+            </dl>
+        </div>
     </section>
 
-    <section class="legal" lang="el">
-        <h2>OPAL HARMONY Ι.Κ.Ε. — Στοιχεία εταιρείας</h2>
-        <p class="legal-note">Ιδιωτική Κεφαλαιουχική Εταιρεία · δημοσίευση κατά το άρθρο 47 ν. 4072/2012</p>
-        <p class="legal-note" lang="en">Statutory company details under Greek company law (Law 4072/2012, art. 47), published in Greek.</p>
-        <dl>
-            <dt>Αρ. Γ.Ε.ΜΗ.</dt><dd>176908106000</dd>
-            <dt>Α.Φ.Μ.</dt><dd>802467746</dd>
-            <dt>Έδρα</dt><dd>Ολύμπου 9, 54630, Θεσσαλονίκη</dd>
-            <dt>Τηλέφωνο</dt><dd>2313252248</dd>
-            <dt>Εταιρικό κεφάλαιο</dt><dd>2.000,00 € (2.000 εταιρικά μερίδια κεφαλαιακών εισφορών)</dd>
-            <dt>Εγγυητικές εισφορές (άρθρο 79)</dt><dd>0,00 €</dd>
-            <dt>Εκκαθάριση</dt><dd>Η εταιρεία δεν τελεί υπό εκκαθάριση</dd>
-            <dt>Διαχειριστής</dt><dd>Ορέστης Παλαμπουγιούκης</dd>
-            <dt>Ιστοσελίδα</dt><dd>https://opalharmony.gr/</dd>
-            <dt>Επικοινωνία</dt><dd><a href="mailto:hello@opalharmony.gr">hello@opalharmony.gr</a></dd>
-        </dl>
+    <div class="wrap">
+        <section class="legal" id="legal" lang="el">
+            <h2>OPAL HARMONY Ι.Κ.Ε. — Στοιχεία εταιρείας</h2>
+            <p class="legal-note">Ιδιωτική Κεφαλαιουχική Εταιρεία · δημοσίευση κατά το άρθρο 47 ν. 4072/2012</p>
+            <p class="legal-note" lang="en">Statutory company details under Greek company law (Law 4072/2012, art. 47), published in Greek.</p>
+            <dl>
+                <dt>Αρ. Γ.Ε.ΜΗ.</dt><dd>176908106000</dd>
+                <dt>Α.Φ.Μ.</dt><dd>802467746</dd>
+                <dt>Έδρα</dt><dd>Ολύμπου 9, 54630, Θεσσαλονίκη</dd>
+                <dt>Τηλέφωνο</dt><dd>2313252248</dd>
+                <dt>Εταιρικό κεφάλαιο</dt><dd>2.000,00 € (2.000 εταιρικά μερίδια κεφαλαιακών εισφορών)</dd>
+                <dt>Εγγυητικές εισφορές (άρθρο 79)</dt><dd>0,00 €</dd>
+                <dt>Εκκαθάριση</dt><dd>Η εταιρεία δεν τελεί υπό εκκαθάριση</dd>
+                <dt>Διαχειριστής</dt><dd>Ορέστης Παλαμπουγιούκης</dd>
+                <dt>Ιστοσελίδα</dt><dd>https://opalharmony.gr/</dd>
+                <dt>Επικοινωνία</dt><dd><a href="mailto:hello@opalharmony.gr">hello@opalharmony.gr</a></dd>
+            </dl>
 
-        <h3>Εταίροι</h3>
-        <table>
-            <thead>
-                <tr><th>Ονοματεπώνυμο</th><th>Διεύθυνση</th><th>Κατηγορία εισφορών</th><th>Μερίδια</th></tr>
-            </thead>
-            <tbody>
-                <tr><td>Ορέστης Παλαμπουγιούκης</td><td>c/o Ολύμπου 9, 54630, Θεσσαλονίκη</td><td>Κεφαλαιακές</td><td>1.900 (95%)</td></tr>
-                <tr><td>Ηρώ Παλαμπουγιούκη</td><td>c/o Ολύμπου 9, 54630, Θεσσαλονίκη</td><td>Κεφαλαιακές</td><td>100 (5%)</td></tr>
-            </tbody>
-        </table>
-    </section>
+            <h3>Εταίροι</h3>
+            <table>
+                <thead>
+                    <tr><th>Ονοματεπώνυμο</th><th>Διεύθυνση</th><th>Κατηγορία εισφορών</th><th>Μερίδια</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Ορέστης Παλαμπουγιούκης</td><td>c/o Ολύμπου 9, 54630, Θεσσαλονίκη</td><td>Κεφαλαιακές</td><td>1.900 (95%)</td></tr>
+                    <tr><td>Ηρώ Παλαμπουγιούκη</td><td>c/o Ολύμπου 9, 54630, Θεσσαλονίκη</td><td>Κεφαλαιακές</td><td>100 (5%)</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
 </main>
 
 <footer>
-    <p>&copy; 2026 Opal Harmony P.C. · OPAL HARMONY Ι.Κ.Ε.</p>
+    <div class="wrap">
+        <span>&copy; 2026 Opal Harmony P.C. · OPAL HARMONY Ι.Κ.Ε.</span>
+        <span><a href="#legal">Company details</a></span>
+    </div>
 </footer>
 
 </body>
